@@ -4,10 +4,10 @@ const fs = require("fs"); // Import the fs module
 
 // Configure Nodemailer transporter
 const transporter = nodemailer.createTransport({
-  service: "gmail", // Use 'service' instead of 'host' for Gmail
+  service: "gmail", 
   auth: {
     user: "hksconsulting2015@gmail.com",
-    pass: "ocml nbxf aqsi zwck", // Use the app password if 2-Step Verification is enabled
+    pass: "ocml nbxf aqsi zwck", 
   },
 });
 
