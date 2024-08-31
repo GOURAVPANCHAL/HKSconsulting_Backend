@@ -6,8 +6,8 @@ const fs = require('fs'); // Import the fs module
 const transporter = nodemailer.createTransport({
   service: "gmail", // Use 'service' instead of 'host' for Gmail
   auth: {
-    user: "gouravpanchal80107@gmail.com",
-    pass: "phbj zozm zwzw jngl", // Use the app password if 2-Step Verification is enabled
+    user: "hksconsulting2015@gmail.com",
+    pass: "ocml nbxf aqsi zwck", // Use the app password if 2-Step Verification is enabled
   },
 });
 
@@ -19,7 +19,7 @@ const createRecord = async (req, res) => {
     // Mail options
     const mailOptions = {
       from: req.body.email, // Sender address (from form)
-      to: 'gouravpanchal80107@gmail.com', // Replace with your email where you want to receive the applications
+      to: 'hksconsulting2015@gmail.com', // Replace with your email where you want to receive the applications
       subject: 'Job Application',
       text: `Name: ${req.body.name}\nEmail: ${req.body.email}\nPhone: ${req.body.phone}\nCover Letter: ${req.body.cover_letter}`,
       attachments: [
